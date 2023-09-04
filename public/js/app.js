@@ -3,6 +3,13 @@ const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2') 
 
+const corsOptions = {
+    origin:'*', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+} 
+console.log(corsOptions)
+
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
